@@ -1,8 +1,0 @@
-C:\C#\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.exe
-C:\C#\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\ResolveAssemblyReference.cache
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\SpaceInvaders_1.Form1.resources
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\SpaceInvaders.Properties.Resources.resources
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\SpaceInvaders.csproj.GenerateResource.Cache
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\SpaceInvaders.exe
-C:\C#\SpaceInvaders\SpaceInvaders\obj\Debug\SpaceInvaders.pdb

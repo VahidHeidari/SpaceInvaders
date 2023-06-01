@@ -71,6 +71,7 @@ namespace SpaceInvaders_1
         // minimum = 2
         const int fps = 16;
         long frames;
+        long screenshot_num;
         // just for debug purposes
         //float fpsElapsed;
         private System.Windows.Forms.Timer mainTimer;
@@ -300,6 +301,18 @@ namespace SpaceInvaders_1
                 frames = 0;
                 gameState = GameStates.splashScreen;
             }
+            //SaveScreenshot();     // Uncomment to capture demo frames.
+        }
+
+        void SaveScreenshot()
+        {
+            var base_dir = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "Screenshots");
+            if (!System.IO.Directory.Exists(base_dir))
+                System.IO.Directory.CreateDirectory(base_dir);
+            var img_name = String.Format("{0}.png", screenshot_num);
+            var out_path = System.IO.Path.Combine(base_dir, img_name);
+            buffer.Save(out_path);
+            ++screenshot_num;
         }
         
         void DrawScene()
@@ -837,7 +850,6 @@ namespace SpaceInvaders_1
             if (G_Height - 20 > o)
                 return false;
             return true;
-
         }
         #endregion
 
@@ -949,6 +961,10 @@ namespace SpaceInvaders_1
 
                 case System.Windows.Forms.Keys.P:
                     paused = true;
+                    break;
+
+                case System.Windows.Forms.Keys.PrintScreen:
+                    SaveScreenshot();
                     break;
             }
         }
